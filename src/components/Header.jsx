@@ -32,6 +32,7 @@ const Header = () => {
             {links.map((link) => {
               return (
                 <Link
+                  key={link.title}
                   href={link.url}
                   className={`hover:text-gray-500 font-bold ${
                     pathname === link.url ? " text-white" : " "
